@@ -20,7 +20,7 @@ const HeroSection = ()=>{
 </p>
                 </div>
                 {/* Social media links */}
-                {socials.map((item:Socials)=><a href={item.link}></a>)}
+                {socials.map((item:Socials)=><a href={item.url}></a>)}
             </section>
         </main>
     )

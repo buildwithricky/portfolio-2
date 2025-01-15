@@ -1,14 +1,14 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import {Roboto} from "@next/font/google"
+import {Sora} from "next/font/google"
 
-const robot = Roboto({
+const sora = Sora({
   subsets:['latin'],
-  weight:['400']
+  variable:"--sora"
 })
 export default function App({ Component, pageProps }: AppProps) {
   return(
-  <main className="roboto.className">
+  <main className={`${sora.variable} font-sans` }>
     <Component  {...pageProps} />;
   </main>
   )
