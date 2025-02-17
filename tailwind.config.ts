@@ -11,11 +11,16 @@ export default {
       fontFamily:{
         sans:['var(--sora)']
       },
+      textShadow: {
+        outline: "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
+      },
       colors: {
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-textshadow')],
 } satisfies Config;

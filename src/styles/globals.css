@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary : #ffffff;
+  --secondary: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +16,12 @@
   }
 }
 
+
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+.section-container {
+  @apply flex flex-col px-5 text-justify w-full h-dvh border border-red-700 my-10;
 }
