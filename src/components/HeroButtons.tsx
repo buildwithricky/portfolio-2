@@ -1,11 +1,11 @@
-import { Socials } from "@/utils/constants";
+import { Socials } from "../../utils/constants";
 import Image from "next/image";
 import React from "react";
 
 const HeroButtons = ({url,icon,name,isDarkMode}:Socials)=>{
     return (
       <div
-        className={`border w-12 h-12 flex  justify-center items-center rounded-md ${
+        className={`border border-secondary w-12 h-12 flex  justify-center items-center rounded-md ${
           isDarkMode ? "bg-black" : "bg-white"
         }`}
       >

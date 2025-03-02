@@ -7,6 +7,7 @@
   --foreground: #171717;
   --primary : #ffffff;
   --secondary: #000000;
+  --tertiary :#71717A;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,8 +21,15 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  width: 100dvw;
+  height: 100dvh;
+  box-sizing: border-box
 }
 
 .section-container {
-  @apply flex flex-col px-5 text-justify w-full h-dvh border border-red-700 my-10;
+  @apply flex flex-col px-5 text-justify w-full h-full  mb-5  border border-red-700 ;
+}
+
+.about-paragraph {
+  @apply text-left tracking-wide mb-4 text-tertiary
 }

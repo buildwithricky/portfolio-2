@@ -4,7 +4,7 @@ import jsIcon2 from "@/assets/icons/icon-javscript.svg"
 import sassIcon from "@/assets/icons/icon-sass.svg"
 import typeScriptIcon from "@/assets/icons/icon-typescript.svg"
 import lightingIcon from "@/assets/icons/lighting.svg"
-import SkillsCard from "@/components/SkillsCard"
+import SkillsCard from "@/components/SkillsCard/SkillsCard"
 import { Skill } from "@/Types/propTypes"
 
 
@@ -45,9 +45,9 @@ const SkillsSection = ()=>{
     return (
       <section className="section-container">
         <h2 className="text-center text-2xl mb-5">
-          My <span className="font-bold text-2xl">Skills</span>
+          My <span className="ml-2 font-extrabold text-2xl">Skills</span>
         </h2>
-        <div className="grid grid-cols-2 gap-x-5 gap-y-5 justify-items-center h-auto items-center border border-blue-950 sm:flex ">
+        <div className="grid grid-cols-2 gap-x-5 gap-y-5 justify-items-center h-auto items-center border-blue-950 sm:flex ">
           {skills.map((sk:Skill) => (
             <SkillsCard icon={sk.icon} name={sk.name} variant={sk.variant} />
           ))}

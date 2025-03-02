@@ -1,0 +1,4 @@
+
+.card {
+    @apply  h-40 w-40 border p-5 border-black flex justify-center items-center rounded-lg
+}
