@@ -10,9 +10,9 @@ import Footer from './Footer';
 export default function Home() {
   return (
     <div className='border border-r-red-600'>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection/>
-      {/* <SkillsSection/> */}
+      <SkillsSection/>
       <ExperienceSection />
       <About/>
       <Projects/>

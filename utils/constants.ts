@@ -5,10 +5,10 @@ export interface Socials {
   isDarkMode: boolean;
 }
 
-import githubIcon from "../assets/icons/facebook.svg";
-import facebookIcon from "../assets/icons/linkedIn.svg";
-import linkedInIcon from "../assets/icons/github.svg";
-import twitterIcon from "../assets/icons/twitter.svg";
+import githubIcon from "@/assets/icons/facebook.svg";
+import facebookIcon from "@/assets//icons/linkedIn.svg";
+import linkedInIcon from "@/assets/icons/github.svg";
+import twitterIcon from "@/assets/icons/twitter.svg";
 
 export const socials: Socials[] = [
   {

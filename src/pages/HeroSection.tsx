@@ -16,13 +16,13 @@ const HeroSection = () => {
       </figure>
 
       {/* Content Section */}
-      <div className="w-full lg:w-1/2 text-center lg:text-left">
+      <div className="w-full lg:w-1/2 text-left p-2 md:mr-10">
         <div className="mb-5">
-          <h1 className="font-semibold leading-tight text-[clamp(2.5rem,4vw,2.5rem)] tracking-wider">
+          <h1 className="font-semibold leading-tight text-[clamp(2.0rem,4vw,2.5rem)] tracking-wider">
             <span className="font-extrabold block">Hello, I'm Patrick.</span>
             <span className="font-extrabold block">
               Frontend{" "}
-              <span className="md:text-[clamp(2rem,5vw,3.5rem)] font-bold text-white text-shadow-outline">
+              <span className="md:text-[clamp(2rem,4vw,2.5rem)] font-bold text-white text-shadow-outline">
                 Developer
               </span>
             </span>
@@ -42,7 +42,7 @@ const HeroSection = () => {
         </div>
 
         {/* Social Media Links */}
-        <div className="flex justify-center lg:justify-start gap-4 flex-wrap">
+        <div className="flex  lg:justify-start gap-4 flex-wrap">
           {socials.map((item: Socials) => (
             <HeroButtons
               key={item.name}

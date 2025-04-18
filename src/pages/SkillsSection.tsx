@@ -44,11 +44,14 @@ const skills:Skill[] = [
 const SkillsSection = ()=>{
     return (
       <section className="section-container">
-        <h2 className="text-center text-2xl mb-5">
-          My <span className="ml-2 font-extrabold text-2xl">Skills</span>
+        <h2 className="section-heading">
+          My <span>Skills</span>
         </h2>
-        <div className="grid grid-cols-2 gap-x-5 gap-y-5 justify-items-center h-auto items-center border-blue-950 sm:flex ">
-          {skills.map((sk:Skill) => (
+        <div className=" grid grid-cols-2  w-full sm:flex flex-row  self-center  flex-wrap justify-center lg:w-3/4">
+          {skills.map((sk: Skill) => (
+            <SkillsCard icon={sk.icon} name={sk.name} variant={sk.variant} />
+          ))}
+          {skills.map((sk: Skill) => (
             <SkillsCard icon={sk.icon} name={sk.name} variant={sk.variant} />
           ))}
         </div>

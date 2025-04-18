@@ -1,4 +1,4 @@
 
 .card {
-    @apply  h-40 w-40 border p-5 border-black flex justify-center items-center rounded-lg
+    @apply  h-40 w-auto min-w-40 sm:w-40 border p-5 border-black flex justify-center items-center rounded-lg m-2
 }
